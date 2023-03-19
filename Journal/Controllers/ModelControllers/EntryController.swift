@@ -12,6 +12,8 @@ class EntryController {
     
     //MARK: - Properties
     let privateDB = CKContainer.default().privateCloudDatabase
+    //Shared Instance
+    static let shared = EntryController()
     //Source Of Truth
     var entries: [Entry] = []
     
@@ -20,9 +22,7 @@ class EntryController {
     
     func createEntryWith(title: String, body: String, completion: @escaping (_ result: Result<Entry?, EntryError>) -> Void) {
         let entry = Entry(title: title, body: body, timestamp: Date())
-        
         save(entry: entry) { result in
-           
         }
     }
     
@@ -40,6 +40,7 @@ class EntryController {
             else { return completion(.failure(.failedToSaveRecord)) }
             
             self.entries.append(entry)
+            print(self.entries)
         }
         
     

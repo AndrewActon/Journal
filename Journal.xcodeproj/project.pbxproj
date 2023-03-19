@@ -15,6 +15,9 @@
 		BF81D1D229C3C060005C798A /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF81D1D129C3C060005C798A /* Entry.swift */; };
 		BF81D1D429C3D2DA005C798A /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF81D1D329C3D2DA005C798A /* EntryController.swift */; };
 		BF81D1D629C3D55C005C798A /* EntryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF81D1D529C3D55C005C798A /* EntryError.swift */; };
+		BF81D1E329C6CF3D005C798A /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF81D1E229C6CF3D005C798A /* EntryListTableViewController.swift */; };
+		BF81D1E629C6D0FE005C798A /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF81D1E529C6D0FE005C798A /* DateExtension.swift */; };
+		BF81D1E929C6D329005C798A /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF81D1E829C6D329005C798A /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		BF81D1D129C3C060005C798A /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		BF81D1D329C3D2DA005C798A /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		BF81D1D529C3D55C005C798A /* EntryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryError.swift; sourceTree = "<group>"; };
+		BF81D1E229C6CF3D005C798A /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		BF81D1E529C6D0FE005C798A /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		BF81D1E829C6D329005C798A /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,6 @@
 				BF81D1B729C3BF30005C798A /* SceneDelegate.swift */,
 				BF81D1BE29C3BF30005C798A /* Assets.xcassets */,
 				BF81D1C329C3BF30005C798A /* Info.plist */,
-				BF81D1D529C3D55C005C798A /* EntryError.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -102,9 +107,37 @@
 		BF81D1CD29C3BF6E005C798A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BF81D1D329C3D2DA005C798A /* EntryController.swift */,
+				BF81D1E429C6D0DC005C798A /* Helpers&Extensions */,
+				BF81D1E129C6CEFF005C798A /* ViewControllers */,
+				BF81D1E029C6CEF6005C798A /* ModelControllers */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BF81D1E029C6CEF6005C798A /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF81D1D329C3D2DA005C798A /* EntryController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		BF81D1E129C6CEFF005C798A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF81D1E229C6CF3D005C798A /* EntryListTableViewController.swift */,
+				BF81D1E829C6D329005C798A /* EntryDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BF81D1E429C6D0DC005C798A /* Helpers&Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF81D1D529C3D55C005C798A /* EntryError.swift */,
+				BF81D1E529C6D0FE005C798A /* DateExtension.swift */,
+			);
+			path = "Helpers&Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +212,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF81D1D229C3C060005C798A /* Entry.swift in Sources */,
+				BF81D1E629C6D0FE005C798A /* DateExtension.swift in Sources */,
 				BF81D1D629C3D55C005C798A /* EntryError.swift in Sources */,
+				BF81D1E329C6CF3D005C798A /* EntryListTableViewController.swift in Sources */,
 				BF81D1B629C3BF30005C798A /* AppDelegate.swift in Sources */,
 				BF81D1D429C3D2DA005C798A /* EntryController.swift in Sources */,
+				BF81D1E929C6D329005C798A /* EntryDetailViewController.swift in Sources */,
 				BF81D1B829C3BF30005C798A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,7 +380,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Andrew.Journal.Cloudkit;
+				PRODUCT_BUNDLE_IDENTIFIER = Journal.DMAA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -374,7 +410,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Andrew.Journal.Cloudkit;
+				PRODUCT_BUNDLE_IDENTIFIER = Journal.DMAA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
