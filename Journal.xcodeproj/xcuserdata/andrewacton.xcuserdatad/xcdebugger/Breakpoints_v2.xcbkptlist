@@ -7,47 +7,62 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0BA345A0-4D39-47C6-BB37-D76E14BAD49C"
+            uuid = "D43248DE-2A9F-4A36-91FD-7B7588801EC3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Journal/Controllers/ViewControllers/EntryDetailViewController.swift"
+            filePath = "Journal/Controllers/ModelControllers/EntryController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "saveButtonTapped(_:)"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "fetchEntriesWith(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "0BA345A0-4D39-47C6-BB37-D76E14BAD49C - 74622b6d4e9cc67"
+                  uuid = "D43248DE-2A9F-4A36-91FD-7B7588801EC3 - bf9a03edf9712ed6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Journal.EntryDetailViewController.saveButtonTapped(Any) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Journal.EntryController.fetchEntriesWith(completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;Journal.Entry&gt;&gt;, Journal.EntryError&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Journal"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewacton/Documents/devmountain/Specialization/Unit5/Journal/Journal/Controllers/ViewControllers/EntryDetailViewController.swift"
+                  urlString = "file:///Users/andrewacton/Documents/devmountain/Specialization/Unit5/Journal/Journal/Controllers/ModelControllers/EntryController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "860">
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "224">
                </Location>
                <Location
-                  uuid = "0BA345A0-4D39-47C6-BB37-D76E14BAD49C - 93effc3875143afc"
+                  uuid = "D43248DE-2A9F-4A36-91FD-7B7588801EC3 - bf9a03edf9712ed6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;Journal.Entry&gt;, Journal.EntryError&gt;) -&gt; () in Journal.EntryDetailViewController.saveButtonTapped(Any) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Journal.EntryController.fetchEntriesWith(completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;Journal.Entry&gt;&gt;, Journal.EntryError&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "Journal"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/andrewacton/Documents/devmountain/Specialization/Unit5/Journal/Journal/Controllers/ViewControllers/EntryDetailViewController.swift"
+                  urlString = "file:///Users/andrewacton/Documents/devmountain/Specialization/Unit5/Journal/Journal/Controllers/ModelControllers/EntryController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "192">
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "1384">
+               </Location>
+               <Location
+                  uuid = "D43248DE-2A9F-4A36-91FD-7B7588801EC3 - 413396e5463759de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.CKRecord) -&gt; Swift.Optional&lt;Journal.Entry&gt; in closure #1 (Swift.Optional&lt;Swift.Array&lt;__C.CKRecord&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Journal.EntryController.fetchEntriesWith(completion: (Swift.Result&lt;Swift.Optional&lt;Swift.Array&lt;Journal.Entry&gt;&gt;, Journal.EntryError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Journal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrewacton/Documents/devmountain/Specialization/Unit5/Journal/Journal/Controllers/ModelControllers/EntryController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "44">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -55,48 +70,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2B80B592-8018-4E87-AF21-C86BE480675D"
+            uuid = "36EA8DE7-74E3-419F-B4CC-45F598B27C78"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Journal/Controllers/ModelControllers/EntryController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "save(entry:completion:)"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "fetchEntriesWith(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "71C1862B-B53C-4960-969C-0A46339C1376"
+            uuid = "9D121DE5-189E-49A8-A7D3-292886010969"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Journal/Controllers/ModelControllers/EntryController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "save(entry:completion:)"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "fetchEntriesWith(completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A0537F96-2C12-48F0-9177-CD454CF9F9AE"
+            uuid = "4C4B0BC9-81AA-43CF-9419-FF669D1DC74C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Journal/Controllers/ModelControllers/EntryController.swift"
+            filePath = "Journal/Controllers/ViewControllers/EntryListTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "createEntryWith(title:body:completion:)"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

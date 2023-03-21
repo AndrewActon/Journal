@@ -45,8 +45,13 @@ class EntryDetailViewController: UIViewController, UITextFieldDelegate {
               let body = bodyTextView.text, !body.isEmpty
         else { return }
         EntryController.shared.createEntryWith(title: title, body: body) { result in
-            DispatchQueue.main.async {
-                self.navigationController?.popViewController(animated: true)
+            switch result {
+            case .success(_):
+                DispatchQueue.main.async {
+                    self.navigationController?.popViewController(animated: true)
+                }
+            case .failure(let error):
+                print("Error in \(#function) : \(error.localizedDescription) \n--\n \(error)")
             }
         }
     }
